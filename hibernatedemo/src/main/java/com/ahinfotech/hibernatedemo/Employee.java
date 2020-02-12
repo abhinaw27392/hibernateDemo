@@ -16,23 +16,24 @@ public class Employee {
 	private Long empId;
 	
 	@Column(name = "emp_name")
-	private String empName;
+	private EmpName empName;
 	
 	@Column(name = "email_id")
 	private String email;
 	
+	public EmpName getEmpName() {
+		return empName;
+	}
+	public void setEmpName(EmpName empName) {
+		this.empName = empName;
+	}
 	public Long getEmpId() {
 		return empId;
 	}
 	public void setEmpId(Long empId) {
 		this.empId = empId;
 	}
-	public String getEmpName() {
-		return empName;
-	}
-	public void setEmpName(String empName) {
-		this.empName = empName;
-	}
+
 	public String getEmail() {
 		return email;
 	}
